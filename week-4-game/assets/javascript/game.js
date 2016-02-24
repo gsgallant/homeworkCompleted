@@ -10,7 +10,6 @@ var losses=0;
 var winaudio = new Audio('assets/audio/cheer.mp3');//winner audio
 var loseaudio = new Audio('assets/audio/aww.mp3');//loser audio
 
-
 var crystal = {
 	red : {
 		strength :200,
@@ -93,11 +92,8 @@ $(document).ready(function(){
 							losses++;
 							$('#announce').text("You Lose!");
 							loseaudio.play();
-						}else{
-						// alert(playerScore);
-						console.log("playerScore: "+playerScore);
-						console.log("randomnumber: " + randomnum);
-						}
+						};
+						
 						if (endOfGame){
 						$('#wins').html("Wins: " + wins);
 						$('#losses').html("Losses: "+losses);
@@ -126,10 +122,5 @@ $(document).ready(function(){
 
 
 startgame();
-
-
-
-
-
 
 });//closes the $JQuery
