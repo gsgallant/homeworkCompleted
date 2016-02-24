@@ -7,7 +7,8 @@ var playLoses = false;
 var playerScore = 0;
 var wins=0;
 var losses=0;
-
+var winaudio = new Audio('assets/audio/cheer.mp3');//winner audio
+var loseaudio = new Audio('assets/audio/aww.mp3');//loser audio
 
 
 var crystal = {
@@ -85,11 +86,13 @@ $(document).ready(function(){
 						endOfGame = true;
 						wins++;
 						$('#announce').text("You Win!!");
+						winaudio.play();
 						}else if (playerScore > randomnum){
 							Playerloses = true;
 							endOfGame = true;
 							losses++;
 							$('#announce').text("You Lose!");
+							loseaudio.play();
 						}else{
 						// alert(playerScore);
 						console.log("playerScore: "+playerScore);
