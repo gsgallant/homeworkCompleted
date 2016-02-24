@@ -1,0 +1,209 @@
+*{ box-sizing: border-box;
+		
+}
+
+body{
+	
+	background-color: #ffffff;
+	overflow: scroll;
+	
+}
+
+header{
+	background: #4aaaa5;
+	padding: 30px;
+	width: 300px;
+	color: #ffffff;
+	margin-left: 120px;
+	font-family: "Georgia", Times, Times New Roman, serif;
+	text-align: center;
+	
+}
+
+#headerlinks{
+	top: 30px;
+	right: 170px;
+	position: fixed;
+	height: 30px;
+	width: 400px;
+	font-size: 11px;
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+   } 	    
+
+li {
+	display: inline;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.maincontent{
+	background-color: #dddddd;
+	background-image: url("../images/gradientbluebkgrd.png");
+	color: #777777;
+    padding-top: 36px;
+    padding-bottom: 20px;
+    
+
+}
+
+h2 {
+ 	color:#4aaaa5;
+ 	font-family: "Georgia", Times, Times New Roman, serif;
+ 	font-size: 24px;
+ }
+
+hr {
+	display: block;
+	color: #777777;
+	width: 100%;
+}
+
+#largefocal {
+	width: 50%;
+	height: 480px;
+	padding: 30px 30px 30px 30px;
+	margin-left: 120px;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	border-top: 10px;
+	line-height: 1.5;
+	display: inline-block;
+	overflow: scroll;
+
+}
+#fixedcontentheader{
+	position: static;
+	top: 30px;
+	left:20px;
+	
+
+}
+
+
+
+.focalareacontent {
+	margin: 10px 15px 0px 0px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	
+}
+#connect{
+	position: relative;
+	top: 113px;
+	left:769px;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	padding: 45px;
+    width: 225px;
+    height: 150px;
+    float: right;
+    margin-right: 250px;
+    position:absolute;
+    margin-left: 30px;
+    display: inline-block;
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-size: 17px;
+    color: #4aaaa5;
+    line-height: .2;
+    text-align: center;
+    
+
+
+}
+
+footer {
+	padding: 50px 50px 40px 50px;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    border-color: #4aaaa5;
+    border-top-width: 10px;
+    border-style: solid;
+    margin-bottom: 0px;
+    font-size: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-sefif;
+}
+
+
+/* Above this line is all the CSS code that is common to all the HTML pages.   Below this line is code that is different for the HTML pages
+
+for index.html*/
+
+#profilepic {
+	margin: 10px 20px 10px 0;
+	float: left;
+
+}
+/* for the Contact.html*/
+#contactform{
+	line-height: 2;
+	color: #777777;
+
+}
+
+#submitbutton{
+	background-color: #4aaaa5;
+	text-align: center;
+	padding: 5px;
+	width: 100px;
+	color: #ffffff;
+}
+/*for Portfolio.html*/
+
+.portfolios{
+padding: 10px 0px 0px 90px;
+display: inline-block;
+}
+
+
+.portimage{
+	float: left;
+	padding: 0px 10px 10px 5px;
+	z-index: 10
+	
+
+}
+
+.portimagecaption{
+	position: relative;
+	top: -45px;
+	left: 0px;
+	background-color: #4aaaa5;
+	font-family: "Georgia", Times, Times New Roman, serif;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px;
+	z-index: 20
+
+
+}
+/* Media Queries Section*/
+
+@media screen and (max-width: 300px) {
+
+   body {
+
+   	width: 900px;
+       
+   }
+  
+   
+  }
+
+@media screen and (max-width: 768px) {
+
+   body {
+       
+   }
+
+ }
+
+@media screen and (max-width: 640px) {
+
+   body {
+       
+   }
+
+}
