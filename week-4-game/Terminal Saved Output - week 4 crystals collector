@@ -1,0 +1,163 @@
+Last login: Wed Feb 24 12:10:01 on ttys000
+Greg@Gregs-MacBook-Pro:~$ desktop
+-bash: desktop: command not found
+Greg@Gregs-MacBook-Pro:~$ cd desktop
+Greg@Gregs-MacBook-Pro:~/desktop$ clone https://github.com/gsgallant/week-4-game.git
+-bash: clone: command not found
+Greg@Gregs-MacBook-Pro:~/desktop$ git clone https://github.com/gsgallant/week-4-game.git
+Cloning into 'week-4-game'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+Greg@Gregs-MacBook-Pro:~/desktop$ cd week-4-game
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git add -A
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git commit -m "Finished Crystals Collector Game"
+[master 626de85] Finished Crystals Collector Game
+ Committer: gsgallant <Greg@Gregs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 424 insertions(+)
+ create mode 100755 assets/css/reset.css
+ create mode 100755 assets/css/style.css
+ create mode 100644 assets/images/background_img.jpg
+ create mode 100644 assets/images/blue.png
+ create mode 100644 assets/images/green.png
+ create mode 100644 assets/images/red.png
+ create mode 100644 assets/images/yellow.png
+ create mode 100644 assets/javascript/game.js
+ create mode 100644 crystalscollector.html
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git push
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 68.38 KiB | 0 bytes/s, done.
+Total 15 (delta 0), reused 0 (delta 0)
+To https://github.com/gsgallant/week-4-game.git
+   445f498..626de85  master -> master
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ heroku login
+Updating Heroku v4 CLI to 4.27.23-df3c8ac (master)... done
+heroku-cli: Adding dependencies... done
+Updating plugins... no plugins to update.
+Enter your Heroku credentials.
+Email: greg.gallant@yahoo.com
+Password (typing will be hidden): 
+Logged in as greg.gallant@yahoo.com
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ heroku create
+Creating app... done, stack is cedar-14
+https://safe-falls-78490.herokuapp.com/ | https://git.heroku.com/safe-falls-78490.git
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git push heroku master
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (18/18), 68.59 KiB | 0 bytes/s, done.
+Total 18 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: 
+remote:  !     Push rejected, no Cedar-supported app detected
+remote: HINT: This occurs when Heroku cannot detect the buildpack
+remote:       to use for this application automatically.
+remote: See https://devcenter.heroku.com/articles/buildpacks
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to safe-falls-78490.
+remote: 
+To https://git.heroku.com/safe-falls-78490.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/safe-falls-78490.git'
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git push heroku master
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (18/18), 68.59 KiB | 0 bytes/s, done.
+Total 18 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: 
+remote:  !     Push rejected, no Cedar-supported app detected
+remote: HINT: This occurs when Heroku cannot detect the buildpack
+remote:       to use for this application automatically.
+remote: See https://devcenter.heroku.com/articles/buildpacks
+remote: 
+remote: Verifying deploy....
+remote: 
+remote: !	Push rejected to safe-falls-78490.
+remote: 
+To https://git.heroku.com/safe-falls-78490.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/safe-falls-78490.git'
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git add -A
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git commit -m "Added JSON and php for heroku push"
+[master 8a8373e] Added JSON and php for heroku push
+ Committer: gsgallant <Greg@Gregs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100755 composer.json
+ create mode 100755 index.php
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 488 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/gsgallant/week-4-game.git
+   626de85..8a8373e  master -> master
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ git push heroku master
+Counting objects: 22, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (22/22), 68.93 KiB | 0 bytes/s, done.
+Total 22 (delta 1), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing system packages...
+remote:        NOTICE: No runtime required in composer.lock; using PHP ^5.5.17
+remote:        - php (5.6.18)
+remote:        - Apache (2.4.16)
+remote:        - Nginx (1.8.0)
+remote: -----> Enabling PHP extensions...
+remote:        - ext-zend-opcache (automatic)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.0.0-alpha11 2015-11-14 16:21:07
+remote: -----> Preparing runtime environment...
+remote:        NOTICE: No Procfile, using 'web: vendor/bin/heroku-php-apache2'.
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 73.9M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://safe-falls-78490.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/safe-falls-78490.git
+ * [new branch]      master -> master
+Greg@Gregs-MacBook-Pro:~/desktop/week-4-game (master)$ 
