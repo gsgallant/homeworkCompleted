@@ -1,2 +1,0 @@
-[{"name":"Josh","gender":"M","grade":"5","GPA":"5","detentions":"5","sleepingInClass":"Yes","catchPhrase":"Da Man!"}]
-[{"name":"Steve","gender":"m","grade":"4","GPA":"4","detentions":"4","sleepingInClass":"y","catchPhrase":"Steve is a lawyer!"}]
