@@ -12,7 +12,7 @@ var loseaudio = new Audio('assets/audio/aww.mp3');//loser audio
 
 var crystal = {
 	red : {
-		strength :200,
+		strength :0,
 		pathtoimg : "assets/images/red.png",
 
 	},
