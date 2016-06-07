@@ -18,6 +18,8 @@ HTML, JavaScript, JQuery
 
 #Comments
 
+This was fun to write and style.  The crystal theme reminded me of the 1960's and the hippie era so I decided to include a video of one of the great songs of that era, "Crystal Blue Persuassion".  The song is fantastic and the images on the video really made sense given the crystal theme of this cool game.
+
 <p align="center">
 &copy; Greg Gallant
 </p>
